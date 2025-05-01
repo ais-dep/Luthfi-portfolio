@@ -1,5 +1,36 @@
 <!DOCTYPE html>
 <html lang="id">
+  <meta
+    name="description"
+    content="Portfolio Luthfi Nabil Ramadhan - Desainer grafis berbakat dari Aceh. Jelajahi karya terbaru di bidang branding, desain web, dan pengembangan."
+  />
+  <meta
+    name="keywords"
+    content="portfolio, desainer grafis, web developer, Aceh, branding, UI/UX"
+  />
+  <meta name="author" content="Luthfi Nabil Ramadhan" />
+
+  <!-- Data Terstruktur untuk SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Luthfi Nabil Ramadhan",
+      "url": "https://portfolio-luthfianda.com",
+      "sameAs": [
+        "https://www.behance.net/lthfinabill",
+        "https://www.linkedin.com/in/luthfinabilramadhan/",
+        "https://www.instagram.com/lthfinabill/",
+        "https://www.youtube.com/@lthfinabill"
+      ],
+      "jobTitle": "Desainer Grafis",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Aceh",
+        "addressCountry": "Indonesia"
+      }
+    }
+  </script>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,11 +41,42 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "GA_MEASUREMENT_ID");
+    </script>
+
+    <!-- Hotjar -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 0o0, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <!-- Header dan Navigasi -->
     <header>
-      <div class="logo">Portfolio</div>
+      <a class="logo" href="#home">Portfolio</a>
       <div class="hamburger">
         <span></span>
         <span></span>
