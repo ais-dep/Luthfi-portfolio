@@ -28,3 +28,29 @@ document.addEventListener("DOMContentLoaded", function () {
     { passive: false }
   );
 });
+
+// Scroll Animation
+document.addEventListener("DOMContentLoaded", function () {
+  const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+  function checkScroll() {
+    const triggerBottom = (window.innerHeight / 5) * 4;
+
+    portfolioItems.forEach((item) => {
+      const itemTop = item.getBoundingClientRect().top;
+
+      if (itemTop < triggerBottom) {
+        item.classList.add("show");
+      } else {
+        // Optional: Remove if you want animation to happen only once
+        item.classList.remove("show");
+      }
+    });
+  }
+
+  // Jalankan saat pertama load
+  checkScroll();
+
+  // Jalankan saat scroll
+  window.addEventListener("scroll", checkScroll);
+});
