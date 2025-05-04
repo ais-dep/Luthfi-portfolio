@@ -77,7 +77,7 @@ nav ul li a:hover::after {
 /* About Me Section */
 .about-section {
   display: flex;
-  background-color: #121212;
+  background-color: #111;
   color: #fff;
   min-height: 500px;
   padding-top: 100px;
@@ -152,7 +152,7 @@ nav ul li a:hover::after {
 /* Skills Section */
 .skills-section {
   padding: 60px 0;
-  background-color: #fff;
+  background-color: #111;
   overflow: hidden;
 }
 
@@ -160,13 +160,13 @@ nav ul li a:hover::after {
   text-align: center;
   font-size: 36px;
   margin-bottom: 40px;
-  color: #000;
+  color: #111;
 }
 
 .marquee-container {
   overflow: hidden;
   width: 100%;
-  background-color: #000;
+  background-color: #fff;
   padding: 20px 0;
   white-space: nowrap;
   position: relative;
@@ -175,7 +175,7 @@ nav ul li a:hover::after {
 .marquee-content {
   display: inline-block;
   animation: marquee 37s linear infinite;
-  color: #fff;
+  color: #000;
   font-size: 24px;
   letter-spacing: 2px;
   font-weight: 600;
