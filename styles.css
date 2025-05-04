@@ -695,6 +695,11 @@ footer {
     font-size: 28px;
   }
 
+  .photo-frame {
+    width: 250px;
+    height: 250px;
+  }
+
   .section-title {
     font-size: 24px;
   }
@@ -737,11 +742,17 @@ footer {
 }
 
 /* Small devices (landscape phones, less than 400px) */
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .main-heading {
     font-size: 24px;
   }
 
+  .profile-photo img {
+    width: 100%;
+    max-width: 250px; /* atau kurang jika wajah terlalu besar */
+    height: auto;
+    object-fit: contain; /* atau 'cover' jika ingin penuh */
+  }
   .title-animation {
     font-size: 28px;
     height: 40px;
@@ -762,4 +773,23 @@ footer {
   .skill-item {
     margin-right: 15px;
   }
+}
+
+/* Styling for Netlify reCAPTCHA container */
+div[data-netlify-recaptcha="true"] {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+/* Ensure the iframe inside the captcha container fits nicely */
+div[data-netlify-recaptcha="true"] iframe {
+  border-radius: 8px;
+  width: 100% !important;
+  max-width: 320px;
+  height: 78px !important; /* default height of reCAPTCHA */
 }
