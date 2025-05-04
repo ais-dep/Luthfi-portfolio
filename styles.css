@@ -77,7 +77,7 @@ nav ul li a:hover::after {
 /* About Me Section */
 .about-section {
   display: flex;
-  background-color: #111;
+  background-color: #121212;
   color: #fff;
   min-height: 500px;
   padding-top: 100px;
