@@ -354,15 +354,18 @@
           <div class="contact-form-container">
             <form
               class="contact-form"
-              action="https://formspree.io/f/mgvkopew"
+              name="contact"
               method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
             >
-              <input type="hidden" name="_language" value="id" />
-              <input
-                type="hidden"
-                name="_subject"
-                value="Pesan Baru dari Portfolio"
-              />
+              <!-- Hidden Netlify bot field -->
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="hidden">
+                <label
+                  >Don't fill this out if you're human: <input name="bot-field"
+                /></label>
+              </p>
 
               <div class="form-group">
                 <input
@@ -373,12 +376,7 @@
                 />
               </div>
               <div class="form-group">
-                <input
-                  type="email"
-                  name="_replyto"
-                  placeholder="Email"
-                  required
-                />
+                <input type="email" name="email" placeholder="Email" required />
               </div>
               <div class="form-group">
                 <input type="text" name="subjek" placeholder="Subject" />
@@ -387,7 +385,7 @@
                 <textarea
                   name="pesan"
                   rows="5"
-                  placeholder="Massage"
+                  placeholder="Message"
                   required
                 ></textarea>
               </div>
