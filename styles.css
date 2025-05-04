@@ -187,7 +187,7 @@ nav ul li a:hover::after {
 
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-50%);
