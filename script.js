@@ -54,3 +54,31 @@ document.addEventListener("DOMContentLoaded", function () {
   // Jalankan saat scroll
   window.addEventListener("scroll", checkScroll);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Title animation
+  const text1 = document.getElementById("text1");
+  const text2 = document.getElementById("text2");
+
+  // Show first text initially
+  text1.classList.add("active");
+
+  // Toggle between texts every 3 seconds
+  setInterval(function () {
+    if (text1.classList.contains("active")) {
+      text1.classList.remove("active");
+      setTimeout(function () {
+        text2.classList.add("active");
+      }, 800);
+    } else {
+      text2.classList.remove("active");
+      setTimeout(function () {
+        text1.classList.add("active");
+      }, 800);
+    }
+  }, 4000);
+
+  // Marquee animation - clone content for smooth looping
+  const marqueeContent = document.querySelector(".marquee-content");
+  marqueeContent.innerHTML += marqueeContent.innerHTML;
+});
