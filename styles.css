@@ -80,6 +80,7 @@ nav ul li a:hover::after {
   background-color: #121212;
   color: #fff;
   min-height: 500px;
+  padding-top: 100px;
 }
 
 .photo-container {
@@ -264,7 +265,7 @@ nav ul li a:hover::after {
 }
 
 .portfolio-section {
-  padding: 100px 0;
+  padding: 110px 0;
   background-color: #0f0f0f;
 }
 
@@ -420,7 +421,7 @@ nav ul li a:hover::after {
 
 /* Contact Section */
 .contact-section {
-  padding: 100px 0;
+  padding: 110px 0;
   background-color: #121212;
 }
 
